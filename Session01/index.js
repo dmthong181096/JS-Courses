@@ -107,62 +107,7 @@ console.log("So La Ma",convertToRomanNumber(143))
 //     readNumber(726504) => bảy mươi hai vạn sáu ngàn năm trăm linh tư.
 
 let arr1 = ["không", "một ", " hai ", " ba ", " bốn ", " năm ", " sáu ", " bảy ", " tám ", " chín "]
-function readTwoNumber(b,c,hasHundred) {
-        console.log("b =", b, "c =", c)
-        if(b == 1)
-        {
-                console.log("true")
-        }
-        const output1 = []
-                switch (b) {
-                        case 0: 
-                              if (hasHundred && c ==0) {
-                                    break  ;
-                              }
-                              else if (hasHundred) {
-                                output1.push("linh")
-                              }
-                              output1.push(arr1[c])
-                              break;
-                        case 1:
-                                output1.push("mườissssss")  
-                                // console.log("1")
-                                switch (c) {
-                                        case 1:
-                                                output1.push("mốt")
-                                                break;
-        
-                                        case 5:
-                                                output1.push("lăm")
-                                                break;
-                                        case 0: 
-                                                break;
-                                        default:
-                                                output1.push(arr1[c])
-                                                break;
-                                }
-                                break;   
-                        default:
-                                output1.push(arr1[b], "mươi")
-                                switch (c) {
-                                        case 1:
-                                                output1.push("mốt")
-                                                break;
-        
-                                        case 5:
-                                                output1.push("lăm")
-                                                break;
-                                        case 0: 
-                                                break;
-                                        default:
-                                                output1.push(arr1[c])
-                                                break;
-                                }
-        
-                }
-        return output1
-        
-}
+
 
 function readNumber1(num) {
         num = num.toString().split("").reverse()
